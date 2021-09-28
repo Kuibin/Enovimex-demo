@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InfoPaginaService } from '../../servicios/info-pagina.service';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  //inyeccion para mandar info del json ala pagina (public infoPagService: InfoPaginaService)
+  constructor(public infoPagService: InfoPaginaService) { }
 
   ngOnInit(): void {
   }

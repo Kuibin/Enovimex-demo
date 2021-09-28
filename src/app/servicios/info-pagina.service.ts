@@ -22,7 +22,7 @@ export class InfoPaginaService {
 
 
         this.cargada=true;
-        this.info.email = resp.email;
+        this.info = resp;//damos parametros del arreglo para exportar
 
         console.log(this.info);//espeficificar en arreglo
 
