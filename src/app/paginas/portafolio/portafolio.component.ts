@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductosService } from '../../servicios/productos.service';
 
 @Component({
   selector: 'app-portafolio',
@@ -7,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PortafolioComponent implements OnInit {
 
-  constructor() { }
+  //aqui tambien inyectamos para usar el json
+  constructor( public productosServices: ProductosService) { }
 
   ngOnInit(): void {
   }
