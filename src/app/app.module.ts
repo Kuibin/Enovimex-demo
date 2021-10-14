@@ -10,6 +10,7 @@ import { PortafolioComponent } from './paginas/portafolio/portafolio.component';
 import { AboutComponent } from './paginas/about/about.component';
 import { ItemComponent } from './paginas/item/item.component';
 import { AppRoutingModulo } from './app-routing.module';
+import { BuscarComponent } from './paginas/buscar/buscar.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AppRoutingModulo } from './app-routing.module';
     FooterComponent,
     PortafolioComponent,
     AboutComponent,
-    ItemComponent
+    ItemComponent,
+    BuscarComponent
   ],
   imports: [
     BrowserModule,
