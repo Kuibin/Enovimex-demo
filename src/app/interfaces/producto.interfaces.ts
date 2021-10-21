@@ -3,4 +3,5 @@ export interface ProductoInterface {
   cod: string;
   titulo: string;
   url: string;
+  imgP: string;
 }

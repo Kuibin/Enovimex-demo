@@ -6,4 +6,7 @@ export interface ProductoDescripcion {
   resumen: string;
   subtitulo1: string;
   subtitulo2: string;
+  imgMain: string;
+  imgPic01: string;
+  imgPic02: string;
 }

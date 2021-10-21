@@ -21,7 +21,7 @@ export class ProductosService {
     //ejecuta el code hasta q se resuelva
     return new Promise<void>((resolve, reject) => {
 
-      this.http.get('https://angular-html-cursoudemy-default-rtdb.firebaseio.com/productos_idx.json')
+      this.http.get('https://enovimex-default-rtdb.firebaseio.com/productos_idx.json')
       .subscribe((resp: any) => {
         //console.log(resp);
         this.productos= resp;
@@ -42,7 +42,7 @@ export class ProductosService {
 
     //usar backtit `(ctrl + })
     //permite insertar expresiones ${id}
-    return this.http.get(`https://angular-html-cursoudemy-default-rtdb.firebaseio.com/productos/${id}.json`)
+    return this.http.get(`https://enovimex-default-rtdb.firebaseio.com/productos/${id}.json`)
   }
 
   buscarProducto(buscar:string){

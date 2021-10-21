@@ -39,7 +39,7 @@ export class InfoPaginaService {
   }
   private cargarEquipo(){
     //Leer JSON firebase
-    this.http.get('https://angular-html-cursoudemy-default-rtdb.firebaseio.com/equipo.json')//indicamos donde esta el archivo
+    this.http.get('https://enovimex-default-rtdb.firebaseio.com/equipo.json')//indicamos donde esta el archivo
       .subscribe( (resp: any) => {//leer json
         this.equipo = resp;//damos parametros del arreglo para exportar
         console.log(this.equipo);//espeficificar en arreglo
